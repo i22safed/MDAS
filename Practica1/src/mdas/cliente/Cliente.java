@@ -1,21 +1,17 @@
 package mdas.cliente;
 
+/*
+ * Breve definicion de la clase 
+ * 
+ * 
+ **/
+
 public class Cliente {
 
 	// private constructor 
-	private Cliente() {
-		System.out.println("Initialize Singleton Client");
+	public Cliente() {
+		
 	}
-	
-	// static attribute (instance)
-	private static Cliente instance = null; 
-	
-	 // Access function 
-	public static Cliente getInstance() {
-		if (instance == null)
-			instance = new Cliente(); 
-		return instance;
-	} 
 	
 	// data
 	private int DNI_; 
@@ -41,6 +37,8 @@ public class Cliente {
 	public void setApellidos(String apellidos) {apellidos_ = apellidos;}
 	public void setDireccion(String direccion) {direccion_ = direccion;}
 	public void setTelefono(int telefono) {telefono_ = telefono;}
+	
+	//
 	
 	
 } // End of Client class
