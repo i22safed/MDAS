@@ -1,9 +1,9 @@
-package mdas.cliente;
+package mdas.ejercicio1;
 
-/*
- * Breve definicion de la clase 
- * 
- * 
+
+/**
+ * <p>Clase cliente, la cual representa el un cliente dentro del sistema. De esta abstracción tenemos
+ * en cuenta los atributos dni, nombre, apellidos, correo y la última modificación del usuario</p>
  **/
 
 public class Cliente {
@@ -11,10 +11,16 @@ public class Cliente {
 	// private constructor 
 	public Cliente() {}
 	
+	public Cliente(int DNI, String usuario, String correo) {
+		setDNI(DNI); 
+		setUsuario(usuario); 
+		setCorreo(correo);
+	}
+	
 	// data
 	private int DNI_; 
 	private String correo_; 
-	private String usuario_;
+	private String usuario_; 
 	
 	//methods 
 	// getters
@@ -28,7 +34,6 @@ public class Cliente {
 	
 	public String getUsuario() {return usuario_;}
 	public void setUsuario(String usuario) {this.usuario_ = usuario;}
-	
 	
 	//
 	
